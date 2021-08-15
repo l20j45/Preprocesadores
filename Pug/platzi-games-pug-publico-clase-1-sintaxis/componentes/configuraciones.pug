@@ -1,0 +1,17 @@
+-var titulo = "Titulo Principal"
+-var usuario = "Daniel"
+//estas son definiciones de variables
+
+-var titulos = ["Titulo principal", "Subtitulo 1","Subtitulo 2"]
+-var enlaces = ["Acerca", "noticias","contacto"]
+
+//esta es una varible tipo lista que podemos recorrer vease el each
+
+mixin caja(imagen,titulo,contenido)
+    .caja
+            .caja__imagen: img(src="images/"+imagen)
+            .caja__contenido
+                h3=titulo
+                p=contenido
+            a.buton Leer mas
+//aqui arriba comenzamos con un tipo de funcion donde podemos poner bloques de html

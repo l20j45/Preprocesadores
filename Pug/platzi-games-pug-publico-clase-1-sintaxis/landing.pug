@@ -1,0 +1,19 @@
+extend componentes/plantilla.pug
+block contenidos
+        section.intro
+            .intro__imagen
+                img(src="images/imagen.png", alt="", srcset="")
+            .intro__contenido
+                // h2  #{titulos[0]}//
+                h2= titulos[0]
+                //de esta dos formas se pueden poner las variables en pug
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, impedit modi maxime optio dicta nulla tempore, repellendus cum ducimus omnis architecto. A consequuntur dolorum repellat, voluptatibus molestias dignissimos quod incidunt?
+                a.boton Leer Mas
+        //ul 
+            each titulo in titulos 
+                li=titulo
+            recorremos toda la lista con el heach
+        main.contenido
+            +caja('imagen.png',titulos[0],'lorem ipsum dolor sit amet')
+            +caja('imagen.png',titulos[1],'lorem ipsum dolor sit amet')
+            +caja('imagen.png',titulos[2],'lorem ipsum dolor sit amet')

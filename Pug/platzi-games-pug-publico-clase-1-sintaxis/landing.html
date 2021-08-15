@@ -1,0 +1,62 @@
+
+<!--estas son definiciones de variables-->
+<!--esta es una varible tipo lista que podemos recorrer vease el each-->
+<!--aqui arriba comenzamos con un tipo de funcion donde podemos poner bloques de html--><!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <!--agregamos el meta de que vamos a usar-->
+    <link rel="stylesheet" href="css/ejercicio-pug.css"/>
+    <!--agregamos el link de css-->
+  </head>
+  <body>
+    <header>
+      <h1>PlatziGames</h1><a>Hola Daniel</a>
+    </header>
+    <section class="intro">
+      <div class="intro__imagen"><img src="images/imagen.png" alt="" srcset=""/></div>
+      <div class="intro__contenido">
+        <!-- h2  #{titulos[0]}//-->
+        <h2>Titulo principal</h2>
+        <!--de esta dos formas se pueden poner las variables en pug-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, impedit modi maxime optio dicta nulla tempore, repellendus cum ducimus omnis architecto. A consequuntur dolorum repellat, voluptatibus molestias dignissimos quod incidunt?</p><a class="boton">Leer Mas</a>
+      </div>
+    </section>
+    <!--ul 
+    each titulo in titulos 
+        li=titulo
+    recorremos toda la lista con el heach
+    -->
+    <main class="contenido">
+      <div class="caja">
+        <div class="caja__imagen"><img src="images/imagen.png"/></div>
+        <div class="caja__contenido">
+          <h3>Titulo principal</h3>
+          <p>lorem ipsum dolor sit amet</p><a class="buton">Leer mas</a>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="caja__imagen"><img src="images/imagen.png"/></div>
+        <div class="caja__contenido">
+          <h3>Subtitulo 1</h3>
+          <p>lorem ipsum dolor sit amet</p><a class="buton">Leer mas</a>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="caja__imagen"><img src="images/imagen.png"/></div>
+        <div class="caja__contenido">
+          <h3>Subtitulo 2</h3>
+          <p>lorem ipsum dolor sit amet</p><a class="buton">Leer mas</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1>PlatziGames</h1>
+      <ul>
+        <li>Acerca</li>
+        <li>noticias</li>
+        <li>contacto</li>
+      </ul>
+    </footer>
+  </body>
+</html>
